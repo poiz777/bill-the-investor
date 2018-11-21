@@ -52,7 +52,7 @@
         private function getStockData(){
             $stockQuotesRequest = new RequestBridge($this->INTRINO_BASE, $this->INTRINO_API_KEY);
             $companyInfoRequest = new RequestBridge($this->INTRINO_BASE, $this->INTRINO_API_KEY);
-            $stockQuotesPayload = $stockQuotesRequest->fetchStockQuotesFromInTriNo('NYSE', '2018-11-20', 1, 20); //'2018-11-20',
+            $stockQuotesPayload = $stockQuotesRequest->fetchStockQuotesFromInTriNo('NYSE', date('Y-m-d'), 1, 20);
     
             if(isset($stockQuotesPayload->data) && $stockQuotesPayload->data){
                 //SELECT FROM ANOTHER IDENTIFIER : NASDAQ, NYSE, BATS, ARCX
