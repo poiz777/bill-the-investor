@@ -1,0 +1,518 @@
+/* line 27, ../sass/partials/cores/_templates.scss */
+.pz-wrapper-block, .pz-wrapper-block .pz-product-wrapper, .pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper, .pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper .pz-qty-count-box, .pz-wrapper-block .pz-product-wrapper .pz-attributes-box, .pz-wrapper-block .pz-product-wrapper .pz-attributes-box .pz-attribute {
+  zoom: 1;
+}
+/* line 29, ../sass/partials/cores/_templates.scss */
+.pz-wrapper-block:before, .pz-wrapper-block .pz-product-wrapper:before, .pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper:before, .pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper .pz-qty-count-box:before, .pz-wrapper-block .pz-product-wrapper .pz-attributes-box:before, .pz-wrapper-block .pz-product-wrapper .pz-attributes-box .pz-attribute:before, .pz-wrapper-block:after, .pz-wrapper-block .pz-product-wrapper:after, .pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper:after, .pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper .pz-qty-count-box:after, .pz-wrapper-block .pz-product-wrapper .pz-attributes-box:after, .pz-wrapper-block .pz-product-wrapper .pz-attributes-box .pz-attribute:after {
+  content: "";
+  display: table;
+}
+/* line 33, ../sass/partials/cores/_templates.scss */
+.pz-wrapper-block:after, .pz-wrapper-block .pz-product-wrapper:after, .pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper:after, .pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper .pz-qty-count-box:after, .pz-wrapper-block .pz-product-wrapper .pz-attributes-box:after, .pz-wrapper-block .pz-product-wrapper .pz-attributes-box .pz-attribute:after {
+  clear: both;
+}
+
+/* line 12, ../sass/stocks.scss */
+body {
+  padding-top: 85px;
+}
+
+/* line 16, ../sass/stocks.scss */
+.navbar-inverse {
+  background-color: rgba(237, 237, 237, 0.9);
+  border-color: rgba(134, 134, 134, 0.31);
+  padding: 8px 0;
+}
+/* line 21, ../sass/stocks.scss */
+.navbar-inverse .pz-logo {
+  max-width: 120px;
+}
+
+/* line 26, ../sass/stocks.scss */
+.no-lr-pad {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 31, ../sass/stocks.scss */
+.no-l-pad {
+  padding-left: 0;
+}
+
+/* line 35, ../sass/stocks.scss */
+.no-r-pad {
+  padding-right: 0;
+}
+
+/* line 39, ../sass/stocks.scss */
+.pz-divider {
+  display: block;
+  padding: 15px 0;
+}
+
+/* line 44, ../sass/stocks.scss */
+.pz-wrapper-block {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 480px) {
+  /* line 44, ../sass/stocks.scss */
+  .pz-wrapper-block {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 44, ../sass/stocks.scss */
+  .pz-wrapper-block {
+    margin-bottom: 0;
+  }
+}
+/* line 53, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 480px) {
+  /* line 53, ../sass/stocks.scss */
+  .pz-wrapper-block .pz-product-wrapper {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  /* line 53, ../sass/stocks.scss */
+  .pz-wrapper-block .pz-product-wrapper {
+    margin-bottom: 15px;
+  }
+}
+/* line 63, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head {
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+  box-sizing: border-box;
+  line-height: normal;
+  text-align: center;
+  margin: 0 !important;
+  border: solid 1px #c5c5c5;
+  border-bottom: none;
+  background: #ececec;
+  position: relative;
+}
+/* line 77, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head .pz-cart-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  font-size: 14px;
+  display: inline-block;
+  padding: 2px;
+  color: #000000;
+  opacity: 0.5;
+  transition: all 0.75s;
+}
+/* line 88, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head .pz-cart-icon:hover {
+  opacity: 1;
+}
+/* line 94, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head .pz-qty-bottom {
+  margin-right: 5%;
+  text-align: left;
+  display: inline-block;
+  width: 40%;
+}
+/* line 99, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head .pz-qty-bottom .pz-sub-text-pod {
+  display: block;
+  font-size: 9px;
+  color: #824242;
+}
+/* line 105, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head .pz-price-bottom {
+  margin-left: 5%;
+  text-align: right;
+  display: inline-block;
+  width: 40%;
+}
+/* line 110, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head .pz-price-bottom .pz-sub-text-pod {
+  display: block;
+  font-size: 9px;
+  color: #824242;
+}
+/* line 116, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head .pz-price-box-box {
+  display: block;
+}
+/* line 119, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head .pz-price-box {
+  letter-spacing: 0.025em;
+}
+/* line 121, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head .pz-price-box .fa {
+  color: darkgreen;
+}
+/* line 126, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head .pz-norm-price-box.pz-strike {
+  text-decoration: line-through;
+  color: #420000;
+  font-size: 10px;
+  font-weight: 500;
+  opacity: 0.5;
+  letter-spacing: 0.075em;
+}
+/* line 136, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head.pz-cat-wrapper {
+  padding: 5px;
+  background: #f5f5f5;
+}
+/* line 139, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head.pz-cat-wrapper small {
+  display: inline-block;
+  transition: all 0.75s;
+  cursor: pointer;
+  background: #e0e0e0;
+  padding: 4px 5px;
+  margin-right: 3px;
+  font-size: 9px;
+  border: solid 1px #d0d0d0;
+}
+/* line 149, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head.pz-cat-wrapper small.pz-cat-box {
+  margin-right: 15px;
+}
+/* line 152, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head.pz-cat-wrapper small:hover {
+  color: black;
+  background: #EFEFEF;
+}
+/* line 156, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head.pz-cat-wrapper small .fa-filter {
+  color: darkgreen;
+}
+/* line 159, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head.pz-cat-wrapper small a {
+  color: #450000;
+  text-decoration: none;
+}
+/* line 162, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head.pz-cat-wrapper small a:hover {
+  border-top: dashed 1px #8c8c8c;
+}
+/* line 169, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-prod-head.pz-cat-wrapper .pz-tags-wrapper .pz-item-tags {
+  margin-top: -6px;
+}
+/* line 177, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-pix-box {
+  box-sizing: border-box;
+  position: relative;
+  border: solid 1px #c5c5c5;
+}
+/* line 181, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-pix-box img {
+  box-sizing: border-box;
+  padding: 10px 10px 10px 10px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 0;
+  border: none;
+}
+/* line 192, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 2px 0 9px 0;
+  border: solid 1px #c5c5c5;
+  border-bottom: none;
+}
+/* line 200, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper .pz-qty-count-box {
+  top: 3px;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* line 208, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper .pz-qty-count-box .pz-qty-wrapper {
+  display: block;
+  float: left;
+  width: 30%;
+  height: 20px;
+}
+/* line 213, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper .pz-qty-count-box .pz-qty-wrapper input.pz-qty {
+  width: 100%;
+  background: #e8e8e8;
+  border: solid 1px #c3c3c3;
+  text-align: center;
+  color: black;
+  outline: none;
+  font-size: 10px;
+  padding: 5px;
+}
+/* line 224, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper .pz-qty-count-box .pz-count-slot {
+  display: block;
+  background: gray;
+  width: 70%;
+  float: left;
+  text-align: center;
+  background: #dadada;
+  border: solid 1px #c3c3c3;
+  border-left: none;
+  color: #000000;
+  font-size: 10px;
+  padding: 5px;
+  font-weight: 700;
+}
+/* line 240, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper .pz-add-to-cart-icon,
+.pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper .pz-delete-from-cart-icon {
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  top: 6px;
+  padding: 5px 6px 4px 6px;
+  border: solid #d2d2d2 1px;
+}
+/* line 249, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper .pz-add-to-cart-icon {
+  right: 5px;
+  color: #004a00;
+  background: #e0e0e0;
+}
+/* line 254, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-qty-count-order-wrapper .pz-delete-from-cart-icon {
+  left: 5px;
+  color: #4a0002;
+  background: #e0e0e0;
+}
+/* line 263, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-attributes-box .pz-attribute {
+  font-size: 12px;
+  background: #cbcbcb;
+  line-height: normal;
+  min-height: 21px;
+  padding: 0;
+}
+/* line 270, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-attributes-box .pz-attribute .pz-attribute-name,
+.pz-wrapper-block .pz-product-wrapper .pz-attributes-box .pz-attribute .pz-attribute-value {
+  padding: 5px 5px 5px 7px;
+  display: block;
+  float: left;
+  line-height: normal;
+  box-sizing: border-box;
+  margin: 0;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+}
+/* line 280, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-attributes-box .pz-attribute .pz-attribute-name {
+  width: 40%;
+  background: #a4a4a4;
+  color: #315e63;
+}
+/* line 285, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-attributes-box .pz-attribute .pz-attribute-value {
+  width: 60%;
+}
+/* line 287, ../sass/stocks.scss */
+.pz-wrapper-block .pz-product-wrapper .pz-attributes-box .pz-attribute .pz-attribute-value.pz-strike {
+  color: red;
+  text-decoration: line-through;
+}
+@media screen and (max-width: 1150px) {
+  /* line 263, ../sass/stocks.scss */
+  .pz-wrapper-block .pz-product-wrapper .pz-attributes-box .pz-attribute {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 263, ../sass/stocks.scss */
+  .pz-wrapper-block .pz-product-wrapper .pz-attributes-box .pz-attribute {
+    font-size: 18px;
+  }
+}
+
+/* line 303, ../sass/stocks.scss */
+h3.pz-full-desc-heading {
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  background: #dadada;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #560000;
+  letter-spacing: 0.1em;
+  border: solid 1px #cccccc;
+}
+
+/* line 318, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-menu-list-item-horizontal {
+  text-align: center;
+}
+/* line 325, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+/* line 328, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-title {
+  margin: 0 0 15px 0;
+  display: inline-block;
+  border-top: dashed 1px #898989;
+  border-bottom: dashed 1px #898989;
+  padding: 8px 0;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+}
+/* line 336, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-title.pz-centered {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  display: block;
+  margin-bottom: 20px;
+}
+/* line 346, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-u-list .pz-list-item {
+  margin-bottom: 15px;
+  border-radius: 4px;
+  color: #FFFFFF;
+}
+/* line 351, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-u-list .pz-list-item.pz-preferred {
+  background: #0073B7;
+}
+/* line 354, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-u-list .pz-list-item.pz-common {
+  background: #FF851B;
+}
+/* line 358, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-u-list .pz-list-item .pz-stock-item {
+  margin: 0;
+  padding: 0;
+}
+/* line 362, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-u-list .pz-list-item .pz-stock-item.pz-stock-type {
+  margin-top: 3px;
+  font-size: 12px;
+}
+/* line 367, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-u-list .pz-list-item .pz-stock-item.pz-company-name {
+  font-size: 15px;
+  color: black;
+  display: inline-block;
+  border-top: dotted 1px black;
+  border-bottom: dotted 1px black;
+  font-weight: 500;
+}
+/* line 376, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-u-list .pz-list-item .pz-stock-item.pz-stock-price {
+  margin-top: 10px;
+  font-weight: 500;
+}
+/* line 382, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-u-list .pz-list-item .pz-stock-item.pz-stock-broker {
+  margin-top: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 5px 15px;
+  border-top: solid #FFFFFF 1px;
+}
+/* line 396, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-table tbody tr td.pz-price {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 0.95em;
+}
+/* line 401, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-table tbody tr td.pz-price .pz-common,
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-table tbody tr td.pz-price .pz-preferred {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+/* line 407, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-table tbody tr td.pz-price .pz-preferred {
+  background: #0073B7;
+}
+/* line 410, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-table tbody tr td.pz-price .pz-common {
+  background: #FF851B;
+}
+/* line 419, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-section .pz-wrapper {
+  background: #FFFFFF;
+}
+/* line 421, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-section .pz-wrapper .pz-header {
+  color: #FFFFFF;
+  padding: 25px 15px;
+}
+/* line 425, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-section .pz-wrapper .pz-header .pz-stock-type,
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-section .pz-wrapper .pz-header .pz-company-name {
+  margin: 0;
+}
+/* line 429, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-section .pz-wrapper .pz-header .pz-company-name {
+  font-size: 15px;
+  color: black;
+  display: inline-block;
+  border-top: dotted 1px black;
+  border-bottom: dotted 1px black;
+  font-weight: 500;
+}
+/* line 438, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-section .pz-wrapper .pz-header .pz-stock-type {
+  margin-top: 3px;
+  font-size: 12px;
+}
+/* line 443, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-section .pz-wrapper .pz-header.pz-common, .pz-stocks-container .pz-main .pz-content-right .pz-stock-section .pz-wrapper .pz-header.pz-preferred {
+  display: inline-block;
+}
+/* line 447, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-section .pz-wrapper .pz-header.pz-preferred {
+  background: #0073B7;
+}
+/* line 450, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-section .pz-wrapper .pz-header.pz-common {
+  background: #FF851B;
+}
+/* line 454, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-section .pz-wrapper .pz-aside {
+  color: black;
+  border-bottom: solid 1px #cecece;
+  background: #eaeaea;
+  border-left: solid 1px #CECECE;
+  border-right: solid 1px #CECECE;
+  padding: 7px 15px;
+}
+/* line 461, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-section .pz-wrapper .pz-aside .pz-stock-price {
+  text-align: right;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+/* line 466, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-section .pz-wrapper .pz-aside .pz-stock-price .pz-common,
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-section .pz-wrapper .pz-aside .pz-stock-price .pz-preferred {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+/* line 472, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-section .pz-wrapper .pz-aside .pz-stock-price .pz-preferred {
+  background: #0073B7;
+}
+/* line 475, ../sass/stocks.scss */
+.pz-stocks-container .pz-main .pz-content-right .pz-stock-section .pz-wrapper .pz-aside .pz-stock-price .pz-common {
+  background: #FF851B;
+}
