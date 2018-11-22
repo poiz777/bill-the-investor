@@ -22,7 +22,23 @@
                 <div class="col-md-12 no-lr-pad pz-content-right">
                     <h1 class="pz-stock-title pz-centered">{{ $pageTitle }}</h1>
                     <section class="pz-stock-section">
-                        @include("partials.stock-overview-loop-data", ['dataSet' => $dataSet])
+                        <div class="col-md-3">&nbsp;</div>
+                        <div class="col-md-6">
+                            <div class="pz-error-block">
+                                @if(isset($pzErrors) && $pzErrors)
+                                    {!! $pzErrors !!}
+                                @endif
+                            </div>
+                            @if($stockForm)
+                                {!! $stockForm['formOpen'] !!}
+                                {!! $stockForm['symbol'] !!}
+                                {!! $stockForm['quote_date'] !!}
+                                {!! $stockForm['submit'] !!}
+                                @csrf
+                                {!! $stockForm['formClose'] !!}
+                            @endif
+                        </div>
+                        <div class="col-md-3">&nbsp;</div>
                     </section>
                 </div>
             </div>

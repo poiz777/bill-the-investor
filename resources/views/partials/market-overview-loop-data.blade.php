@@ -25,8 +25,7 @@
                     <td>{{$companyInfo->name}}</td>
                     <td>@if(isset($companyInfo->securities->security_type)){{ $companyInfo->securities->security_type }}@endif</td>
                     <td>
-                        {{-- OUR REQUEST FOR FOR A SPECIFIC DATE: [IE. TODAY]. SO WE SIMPLY HARDCODE THE DATE--}}
-                        {{ date('d.m.Y') }}
+                        {{ $quoteDate }}
                     </td>
                     <td>
                         {{-- HOWEVER, SINCE WE HAVE NO ACCESS TO REAL-TIME DATA WITH ACCURATE TIMINGS, --}}

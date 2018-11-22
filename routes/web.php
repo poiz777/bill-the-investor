@@ -13,8 +13,9 @@
     
     use Illuminate\Support\Facades\Route;
     
-    // SET HOME PAGE TO POINT TO THE SAME PAGE AS THE HIGHEST MARKET PRICES PAGE:
-    Route::get( '/', 'StockController@fetchHighestPrices' )->name('rte.home_page.get');
+    // STOCK-CHECKER FORM PAGE ROUTES:
+    Route::get( '/', 'StockController@stockQuotes' )->name('rte.stock_checker.get');
+    Route::post( '/', 'StockController@stockQuotes' )->name('rte.stock_checker.post');
     
     // HIGHEST PRICES ROUTES:
     Route::get( '/stocks/highest-market-prices', 'StockController@fetchHighestPrices' )->name('rte.stocks.highest_market_prices.get');
@@ -24,3 +25,4 @@
     
     // STOCK-OVERVIEW ROUTES:
     Route::get( '/stocks/stock-overview', 'StockController@fetchStockOverview' )->name('rte.stocks.stock_overview.get');
+    

@@ -1,7 +1,7 @@
 @extends('layouts.stocks-layout')
 
 @section('pageTitle')
-    Market Overview
+    {{ $pageTitle }}
 @endSection
 
 @section('extraCSS')
@@ -21,7 +21,7 @@
                 @endif
 
                 <div class="col-md-12 no-lr-pad pz-content-right">
-                    <h1 class="pz-stock-title pz-centered">Market Overview</h1>
+                    <h1 class="pz-stock-title pz-centered">{{ $pageTitle }}</h1>
                     @if(isset($dataSet) and !empty($dataSet))
                         @include('partials.market-overview-loop-data', ['dataSet' => $dataSet])
                     @else

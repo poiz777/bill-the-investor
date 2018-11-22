@@ -483,3 +483,201 @@ h3.pz-full-desc-heading {
         }
     }
 }
+
+
+// STOCK FORM
+.form-horizontal .form-group {
+    background: #f1f1f1;
+    padding: 15px;
+    margin: 0 0 2px 0;
+    border: solid 1px #c3c0c0;
+    
+    label{
+        padding: 7px  15px;
+        background: #e6e6e6;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        color: #3e3e3e;
+        display: inline-block;
+        border-top: dashed 1px gray;
+        border-bottom: dashed 1px gray;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        
+        .pz-hint {
+            display: block;
+            font-size: 10px;
+            font-weight: 500;
+            font-style: italic;
+            text-transform:none;
+            color: #00015a;
+        }
+    }
+    
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 50px;
+        padding: 6px 15px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #d8d8d8;
+        border-radius: 0 !important;
+        box-shadow: none;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        font-size: 1.25em;
+        &[disabled],
+        &[readonly]{
+            background: #d2d2d2;
+            border: solid 1px #c3c3c3;  //#9e9e9e;
+            cursor: not-allowed;        //url(/images/icons/stop.png), auto;
+        }
+        &.has-error{
+            border-color: red;
+            border-style: dashed;
+            color: red;
+            font-style: normal;
+            // font-weight: 500;
+        }
+        /*
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        */
+    }
+    
+    textarea.form-control.description,
+    textarea.form-control.sub_description{
+        min-height:220px;
+    }
+    
+    .pz-asterisks{
+        &.has-error{
+            background:transparent;
+            color:red;
+        }
+    }
+    
+    .pz-checkbox-radio-groups-wrapper{
+        @extend %fix_float;
+        .pz-checkbox-radio-group-box{
+            @extend %fix_float;
+            input{
+                display:block;
+                float:left;
+                max-width: 24px;
+                margin-right:10px;
+            }
+            label{
+                display:inline-block;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.pz-hidden{
+    display:none;
+}
+.pz-align-center{
+    text-align: center;
+}
+.pz-align-left{
+    text-align: left;
+}
+.pz-align-right{
+    text-align: right;
+}
+
+
+// ERRORS
+
+.pz-hint-box.has-error,
+.pz-hint-box.pz-has-error{
+    display: block;
+}
+
+.pz-hint-box.has-error *,
+.pz-hint-box.pz-has-error *{
+    display: inline-block;
+    color: red;
+    padding: 3px 0;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+.col-md-12.error_warning {
+    background: gray; //red;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.pz-error-wrapper{
+    padding-left:0;
+    padding-right:0;
+    .error_box.col-md-12 {
+        margin-bottom: 30px !important;
+        padding-left:0;
+        padding-right:0;
+    }
+}
+
+.error_details.col-md-12 {
+    @extend %fix_float;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    .error_combo_wrapper.col-md-12 {
+        @extend %fix_float;
+        font-size:11px;
+        //padding: 5px 10px;
+        background: rgba(255, 255, 255, 0.10);
+        border: solid 1px #b3b3b3;
+        border-top: none;
+        &:nth-child(2n){
+            background: rgba(154, 154, 154, 0.25);
+        }
+        
+        .error_field_name.col-md-4 {
+            width: 33.33333333333333%;
+            float: left;
+            font-weight: 700;
+            color: darkred;
+            padding: 10px 15px;
+            //background: rgba(255, 0, 0, 0.1);
+            @include respond-to(small-screens) {
+                width: 100%;
+                box-sizing: border-box;
+                padding-left: 20px;
+                padding-right: 20px;
+                
+            }
+        }
+        .error_field_msg.col-md-8 {
+            width: 66.66666666666666%;
+            float: left;
+            color: darkblue;
+            font-style: italic;
+            padding: 10px 15px;
+            border-left: solid 1px #b3b3b3;
+            //background: rgba(0, 255, 0, 0.1);
+            @include respond-to(small-screens) {
+                width: 100%;
+                box-sizing: border-box;
+                padding-left: 20px;
+                padding-right: 20px;
+                
+            }
+        }
+    }
+}

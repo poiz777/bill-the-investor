@@ -1,7 +1,7 @@
 @extends('layouts.stocks-layout')
 
 @section('pageTitle')
-    Highest Market Prices
+    {{ $pageTitle }}
 @endSection
 
 @section('extraCSS')
@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="col-md-9 pz-content-right">
-                    <h1 class="pz-stock-title">Highest Market Prices</h1>
+                    <h1 class="pz-stock-title"> {{ $pageTitle }}</h1>
                     @if(isset($dataSet) and !empty($dataSet))
                         @include('partials.highest-market-prices-loop-data', ['dataSet' => $dataSet])
                     @else

@@ -2,6 +2,10 @@
     
     namespace App\Poiz\Traits;
 
+    use App\Poiz\Form\FormObjects\PzFormInterFace;
+    use App\Poiz\Form\Helpers\FormBaker;
+    use Symfony\Component\HttpFoundation\Request;
+
     trait WorkerTrait {
         
         private function getParsedEnvData(){
@@ -25,6 +29,7 @@
     
         private function getRoutesForMenuLinks(){
             return [
+                'Get Quotes'                => 'rte.stock_checker.get',
                 'Highest Market Prices'     => 'rte.stocks.highest_market_prices.get',
                 'Market Overview'           => 'rte.stocks.market_overview.get',
                 'Company Stock Overview'    => 'rte.stocks.stock_overview.get',
@@ -47,5 +52,65 @@
             return $envObject;
         
         }
+    
+        private function getFormOptions($name='stock_checker_form', $btnLabel='Submit', $action=''){
+            return [
+                'name'      => $name,
+                'btnID'     => 'pz-submit-button',
+                'class'     => 'form-horizontal',
+                'method'    => 'POST',
+                'action'    => $action,
+                'enctype'   => 'multipart/form-data',
+                'btnClass'  => 'form-control pz-submit-button',
+                'btnLabel'  => $btnLabel,
+            ];
+        }
+    
+        protected function filterFormData(Request $request, $formKey='stockcheckerform'){
+            $formData           = $request->request->get($formKey);
+            if($formData){
+                foreach($formData as $field=>&$datum){
+                    if(strstr($field, 'date')){
+                        $datum  = (new \DateTime($datum))->format('Y-m-d');
+                    }
+                }
+                return $formData;
+            }
+            return $formData;
+        }
+    
+        protected function validateFormData(Request $request, FormBaker $formBakerInstance, PzFormInterFace $itemFormObject, $formKey, $rayFormItemOptions=[]){
+            // VALIDATION:
+            $validationData             = new \stdClass();
+            $validationData->rayForm    = null;
+            $rayErrors                  = null;
+            $strErrors                  = null;
         
+            $itemFormObject->autoSetClassProps($this->filterFormData($request, $formKey));
+            try {
+                $rayValidityBag = $formBakerInstance->validate( $itemFormObject );
+                $rayErrors      = $rayValidityBag['errors'];
+                $raySanitized   = $rayValidityBag[$formKey];
+                $strErrors      = $formBakerInstance->renderErrors($rayErrors, true);
+                $itemFormObject->autoSetClassProps($raySanitized);
+            
+                $validationData->rayErrors      = $rayErrors;
+                $validationData->raySanitized   = $raySanitized;
+                $validationData->strErrors      = $strErrors;
+                $validationData->rayValidityBag = $rayValidityBag;
+                $rayItemForm                    = $formBakerInstance->buildFormFromEntityClass( $rayFormItemOptions, true, $itemFormObject );
+                $validationData->rayForm        = $rayItemForm;
+            } catch ( \ReflectionException $e ) { }
+        
+            if($rayErrors){
+                $formBakerInstance->setErrorFields($rayErrors);
+                try {
+                    $rayItemForm = $formBakerInstance->buildFormFromEntityClass( $rayFormItemOptions, true, $itemFormObject );
+                    $validationData->rayForm    = $rayItemForm;
+                } catch ( \ReflectionException $e ) {}
+            }
+            return $validationData;
+        }
+    
+    
     }
