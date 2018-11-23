@@ -22,7 +22,7 @@
 		 * @var string
          *
          * ##FormLabel Stock Market Symbol
-         * ##FormFieldHint <span class='pz-hint'><span class='fa fa-info'></span> &nbsp;The Stock Market Symbol (EG - NYSE: for New York Stock Exchange) <br /><span style='color:darkred'>Note: This is Case-Sensitive!</span></span>
+         * ##FormFieldHint <span class='pz-hint'><span class='fa fa-lightbulb-o'></span>&nbsp;The Stock Market Symbol (EG - NYSE: for New York Stock Exchange) <br /><span style='color:darkred'>Note: This is Case-Sensitive!</span></span>
          * ##FormInputType text
          * ##FormInputRequired 1
          * ##FormPlaceholder NYSE
@@ -35,7 +35,7 @@
 		 * @var string
          *
          * ##FormLabel Quote Date
-         * ##FormFieldHint <span class='pz-hint'>The Date for which to fetch the Quotes</span>
+         * ##FormFieldHint <span class='pz-hint'><span class='fa fa-lightbulb-o'></span>&nbsp;The Date for which to fetch the Quotes</span>
          * ##FormInputType datetime-local
          * ##FormInputRequired 0
          * ##FormPlaceholder 0
